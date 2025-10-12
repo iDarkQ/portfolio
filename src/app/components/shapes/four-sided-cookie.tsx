@@ -1,0 +1,17 @@
+import { forwardRef } from "react";
+
+interface FourSidedCookieProps extends React.SVGProps<SVGPathElement> {
+  fill: string;
+}
+
+export const FourSidedCookie = forwardRef<SVGPathElement, FourSidedCookieProps>(
+  (props, ref) => (
+    <path
+      ref={ref}
+      d="M14.5509 3.18777C18.5122 1.46733 22.5327 5.48784 20.8122 9.4491L20.5278 10.104C20.0025 11.3134 20.0025 12.6866 20.5278 13.8959L20.8122 14.5509C22.5327 18.5122 18.5122 22.5327 14.5509 20.8122L13.896 20.5278C12.6866 20.0025 11.3135 20.0025 10.1041 20.5278L9.44912 20.8122C5.48785 22.5327 1.46735 18.5122 3.18778 14.5509L3.47224 13.8959C3.99749 12.6865 3.99749 11.3134 3.47223 10.104L3.18778 9.4491C1.46735 5.48784 5.48786 1.46733 9.44912 3.18777L10.1041 3.47222C11.3135 3.99748 12.6866 3.99748 13.896 3.47222L14.5509 3.18777Z"
+      {...props}
+    />
+  )
+);
+
+FourSidedCookie.displayName = "FourSidedCookie";

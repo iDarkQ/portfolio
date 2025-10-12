@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Google Sans2';
+    src: url('../fonts/GoogleSansFlex.ttf') format('truetype');
+}
+
+@theme inline {
+    --color-primary: #9f86ff !important;
+    --color-tertiary-container: #553f5d;
+    --color-on-surface-variant: #cbc4cc;
+    --color-primary-80: #ccbeff;
+    --color-background: #141314;
+    --color-on-surface: #1f1f1f;
+    --color-on-primary: #1a0056;
+    --color-surface-1: #1c1b1d;
+    --color-surface-2: #211f21;
+    --color-surface-3: #211f21;
+    --color-surface-4: #363436;
+    --color-surface-4: #363436;
+
+    --radius-xxl: 48px;
+    --radius-xl: 32px;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+    --radius-xsm: 8px;
+
+    --text-x2l: 22px;
+
+    --spacing-xxl: 48px;
+    --btn-height: 80px;
+    --icon-btn-height: 56px;
+
+    --mio-theme-v2-headline-s-font-size: 24px;
+
+    --animate-ripple: ripple-animation 600ms linear;
+}
+
+h1 {
+    font-size: 88px !important;
+    color: var(--color-primary);
+    font-weight: 475;
+    line-height: 0.75;
+}
+
+h2 {
+    font-size: 45px !important;
+    color: var(--color-primary);
+    font-weight: 475;
+    line-height: 0.75;
+}
+
+p,
+span,
+a,
+input::placeholder {
+    color: white;
+}
+
+input::placeholder {
+    font-size: 22px;
+}
+
+input {
+    font-size: 22px;
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    border-bottom: 1px solid var(--color-primary-80);
+}
+
+textarea {
+    font-size: 22px !important;
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    border-bottom: 1px solid var(--color-primary-80);
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+input:focus {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+input:focus~label {
+    color: var(--color-primary) !important;
+}
+
+label {
+    color: var(--color-primary-80);
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--color-background);
+    /* url(../fonts/google-sans-webfont/style.css) */
+    font-family: "Google Sans2";
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px !important;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
