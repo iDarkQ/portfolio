@@ -35,7 +35,31 @@
     --mio-theme-v2-headline-s-font-size: 24px;
 
     --animate-ripple: ripple-animation 600ms linear;
+    --animate-float: float 3s ease-in-out infinite;
 }
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 
 h1 {
     font-size: 88px !important;
@@ -106,13 +130,6 @@ body {
     background-color: var(--color-background);
     /* url(../fonts/google-sans-webfont/style.css) */
     font-family: "Google Sans2";
-}
-
-@keyframes ripple-animation {
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
 }
 
 .material-symbols-outlined {
