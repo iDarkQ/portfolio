@@ -163,12 +163,15 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div data-aos="flip-up" className="flex-2">
+          <div className="flex-2">
             <AboutBanner />
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-20 min-h-180 py-20">
+      <div
+        id="contact"
+        className="flex flex-col items-center justify-center gap-20 min-h-180 py-20"
+      >
         <div className="w-[70%] flex flex-col gap-10">
           <h2 data-aos="fade-down" className="text-center">
             Send Me A Message!
