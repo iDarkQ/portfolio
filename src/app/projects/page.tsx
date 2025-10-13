@@ -1,7 +1,4 @@
-import { Card } from "@/app/components/card";
 import { ProjectCard } from "@/app/components/project-card";
-import { ZigzagLine } from "@/app/components/shapes/zigzag-line";
-import { ZigzagLineHorizontal } from "@/app/components/shapes/zigzag-line-horizontal";
 import { Github, Instagram, Linkedin } from "lucide-react";
 
 export interface ProjectData {
