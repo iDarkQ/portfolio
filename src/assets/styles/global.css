@@ -8,6 +8,7 @@
 @theme inline {
     --color-primary: #9f86ff !important;
     --color-tertiary-container: #553f5d;
+    --color-secondary-container: #45455a;
     --color-on-surface-variant: #cbc4cc;
     --color-primary-80: #ccbeff;
     --color-background: #141314;
