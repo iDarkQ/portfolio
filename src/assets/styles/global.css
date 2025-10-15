@@ -10,6 +10,7 @@
     --color-tertiary-container: #553f5d;
     --color-secondary-container: #45455a;
     --color-on-surface-variant: #cbc4cc;
+    --color-surface-variant: #4d4256;
     --color-primary-80: #ccbeff;
     --color-background: #141314;
     --color-on-surface: #1f1f1f;
@@ -28,11 +29,17 @@
     --radius-xsm: 8px;
 
     --text-x2l: 22px;
+    --text-5xl: 45px;
+    --text-8xl: 88px;
 
     --spacing-xxl: 48px;
+    --spacing-lg: 32px;
+    /* --spacing-btn-height: max-lg:h-15 h-20; */
     --btn-height: 80px;
     --icon-btn-height: 56px;
     --chip-container-height: 32px;
+
+    --breakpoint-xs: 22rem;
 
     --mio-theme-v2-headline-s-font-size: 24px;
 
@@ -74,12 +81,12 @@
 
 
 
-h1 {
+/* h1 {
     font-size: 88px !important;
     color: var(--color-primary);
     font-weight: 475;
     line-height: 0.75;
-}
+} */
 
 h2 {
     font-size: 45px !important;
