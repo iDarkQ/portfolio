@@ -40,6 +40,17 @@
     --animate-float: float 3s ease-in-out infinite;
 }
 
+@layer components {
+    .btn-h {
+        @apply max-lg:h-15 h-20;
+    }
+
+    .btn-pt {
+        @apply max-lg:pt-15 pt-20;
+    }
+}
+
+
 @keyframes ripple-animation {
     to {
         transform: scale(4);
