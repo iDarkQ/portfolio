@@ -1,5 +1,4 @@
 import { ProjectCard } from "@/app/components/project-card";
-import { Github, Instagram, Linkedin } from "lucide-react";
 
 export interface ProjectData {
   name: string;
@@ -43,6 +42,7 @@ const projects: ProjectData[] = [
       "Prisma",
       "Postgres",
       "Turborepo",
+      "AI"
     ],
   },
   {
@@ -85,18 +85,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <footer className="bg-tertiary-container flex flex-col items-center justify-center gap-20 py-20">
-        <div className="w-[70%] flex flex-col gap-10">
-          <div className="flex flex-row gap-10 justify-center">
-            <Github color="white" size={48} />
-            <Instagram color="white" size={48} />
-            <Linkedin color="white" size={48} />
-          </div>
-          <p className="text-2xl text-center">
-            Copyright © 2025 Łukasz. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
