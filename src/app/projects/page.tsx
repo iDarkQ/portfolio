@@ -65,7 +65,7 @@ const projects: ProjectData[] = [
   },
 ];
 
-export default function About() {
+export default function Project() {
   return (
     <div>
       <div className="flex flex-col items-center justify-center">
