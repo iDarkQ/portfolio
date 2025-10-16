@@ -10,8 +10,7 @@ interface Props {
 const baseHeading = "text-[var(--color-primary)] font-[475] leading-[0.75]";
 const styles = {
   p: clsx(
-    "text-white text-2xl",
-    "max-xs:text-md max-sm:text-xl"
+    "text-white paragraph",
   ),
 
   h1: clsx(
