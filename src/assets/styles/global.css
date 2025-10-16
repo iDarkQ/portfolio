@@ -28,6 +28,9 @@
     --radius-sm: 12px;
     --radius-xsm: 8px;
 
+    --text-xs: 10px;
+    --text-sm: 12px;
+    --text-md: 16px;
     --text-x2l: 22px;
     --text-5xl: 45px;
     --text-8xl: 88px;
@@ -49,11 +52,19 @@
 
 @layer components {
     .btn-h {
-        @apply max-lg:h-15 h-20;
+        @apply max-lg:h-15 h-20 max-lg:min-h-15 min-h-20;
     }
 
     .btn-pt {
         @apply max-lg:pt-15 pt-20;
+    }
+
+    .paragraph {
+        @apply text-lg max-sm:text-md;
+    }
+
+    .lg-paragraph {
+        @apply md:text-2xl;
     }
 }
 
