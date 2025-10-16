@@ -1,5 +1,6 @@
 import { Divider } from "@/app/components/divider";
 import { IconButton } from "@/app/components/icon-button";
+import { Text } from "@/app/components/text";
 import { Github, Instagram, Linkedin } from "lucide-react";
 
 export const LayoutFooter = () => (
@@ -17,9 +18,9 @@ export const LayoutFooter = () => (
           <Linkedin color="white" size={48} />
         </IconButton>
       </div>
-      <p className="text-2xl text-center">
+      <Text className="lg-paragraph! text-center">
         Copyright © 2025 Łukasz. All rights reserved.
-      </p>
+      </Text>
     </div>
   </footer>
 );
