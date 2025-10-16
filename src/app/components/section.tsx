@@ -11,7 +11,7 @@ interface Props {
 export const Section = ({ className, id, extraClassName, children }: Props) => (
   <section
     className={clsx(
-      "relative py-20",
+      "relative py-20 overflow-hidden",
       className && className
     )}
     id={id}
