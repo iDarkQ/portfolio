@@ -15,7 +15,8 @@ interface ButtonProps extends React.HTMLAttributes<HTMLElement> {
   as?: "button" | "a" | "div";
   href?: string;
   target?: string;
-  onClick?: () => void;
+  onClick?: () => void | boolean;
+  clickable?: boolean;
 }
 
 export const Button = ({
@@ -26,15 +27,16 @@ export const Button = ({
   as = "button",
   href,
   target,
+  clickable = true,
   ...props
 }: ButtonProps) => {
   const Tag = as;
   const { ref, createRipple } = useRipple(filled);
 
   const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    if (!clickable) return;
+    if (!onClick?.()) return;
     createRipple(e);
-
-    onClick?.();
   };
 
   return (
@@ -45,15 +47,17 @@ export const Button = ({
       target={target}
       onClick={handleClick}
       className={clsx(
-        "flex items-center justify-center relative overflow-hidden cursor-pointer",
-        "text-xl font-[475] active:font-normal",
-        "transition-[border-radius,font-weight,background-color,width] duration-200 ease-[cubic-bezier(.2,0,0,1)]",
-        "hover:brightness-105",
-        filled
-          ? "bg-primary text-on-primary"
-          : "bg-transparent text-white border-1 border-primary",
-        "text-on-primary rounded-xxl active:rounded-md px-xxl w-fit",
-        "btn-h max-lg:px-lg",
+        "flex items-center justify-center relative overflow-hidden w-fit",
+        "text-xl font-[475] text-white",
+        "rounded-xxl px-xxl btn-h max-lg:px-lg",
+        "transition-[border-radius,font-weight,background-color,width, height] duration-200 ease-[cubic-bezier(.2,0,0,1)]",
+        filled ? "bg-primary" : "bg-transparent border-1 border-primary",
+        clickable && [
+          "cursor-pointer",
+          "active:font-normal",
+          "hover:brightness-105 active:rounded-md",
+        ],
+        !clickable && "cursor-default select-none",
         className
       )}
     >
