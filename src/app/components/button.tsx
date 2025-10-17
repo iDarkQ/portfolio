@@ -12,7 +12,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
   className?: string;
   filled?: boolean;
-  as?: "button" | "a" | "div";
+  as?: "button" | "a" | "div" | "nav";
   href?: string;
   target?: string;
   onClick?: () => void | boolean;
