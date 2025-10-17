@@ -1,22 +1,23 @@
 import clsx from "clsx";
+import { HTMLAttributes } from "react";
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLDivElement> {
   className?: string;
   field?: string;
   as?: "input" | "textarea";
 }
 
-export const ContactFormField = ({ as = "input", className, field }: Props) => {
+export const ContactFormField = ({ as = "input", className, field, ...rest }: Props) => {
   const Component = as;
 
   return (
-    <div className={clsx("flex flex-col-reverse gap-1", className)}>
+    <div {...rest} className={clsx("flex flex-col-reverse gap-1", className)}>
       <Component
         id={field}
         name={field}
         placeholder={`Enter your ${field}`}
         className={clsx(
-          "peer lg-paragraph! outline-none w-full p-3 my-[10px] box-border border-0 text-white",
+          "peer paragraph outline-none w-full p-3 my-[10px] box-border border-0 text-white",
           "border-b border-primary-80",
           "focus:border-primary",
           as === "textarea" && "resize-y min-h-[100px] max-h-[300px]"
@@ -24,10 +25,7 @@ export const ContactFormField = ({ as = "input", className, field }: Props) => {
       />
       <label
         htmlFor={field}
-        className={clsx(
-          "paragraph text-primary-80",
-          "peer-focus:text-primary"
-        )}
+        className={clsx("paragraph text-primary-80", "peer-focus:text-primary")}
       >
         Your {field}
       </label>
