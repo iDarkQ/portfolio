@@ -10,16 +10,22 @@ import portfolioPic from "@/assets/images/portfolio.jpg";
 
 gsap.registerPlugin(MorphSVGPlugin);
 
-export const HeroImageBlob = ()=> {
-  const clipPathRef = useRef<SVGPathElement | null>(null);   // path inside clipPath
-  const strokeRef = useRef<SVGPathElement | null>(null);     // visible stroked path
+export const HeroImageBlob = () => {
+  const clipPathRef = useRef<SVGPathElement | null>(null); // path inside clipPath
+  const strokeRef = useRef<SVGPathElement | null>(null); // visible stroked path
   const fourRef = useRef<SVGPathElement | null>(null);
   const sixRef = useRef<SVGPathElement | null>(null);
   const sevenRef = useRef<SVGPathElement | null>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
 
   useEffect(() => {
-    if (!clipPathRef.current || !strokeRef.current || !fourRef.current || !sixRef.current || !sevenRef.current)
+    if (
+      !clipPathRef.current ||
+      !strokeRef.current ||
+      !fourRef.current ||
+      !sixRef.current ||
+      !sevenRef.current
+    )
       return;
 
     const clipPathEl = clipPathRef.current;
@@ -28,7 +34,10 @@ export const HeroImageBlob = ()=> {
     const six = sixRef.current;
     const seven = sevenRef.current;
 
-    const tl = gsap.timeline({ repeat: -1, defaults: { duration: 0.8, ease: "power4.out" } });
+    const tl = gsap.timeline({
+      repeat: -1,
+      defaults: { duration: 0.8, ease: "power4.out" },
+    });
 
     // morph both the clip geometry AND the visible stroke path in lock-step
     tl.to([clipPathEl, strokeEl], { morphSVG: six })
@@ -46,7 +55,7 @@ export const HeroImageBlob = ()=> {
   }, []);
 
   return (
-    <div className="h-[100%]">
+    <div className="h-[100%] max-h-100">
       <svg ref={svgRef} viewBox="0 0 24 24" width="auto" height="100%">
         <defs>
           <clipPath id="blobClip">
@@ -69,7 +78,7 @@ export const HeroImageBlob = ()=> {
           ref={strokeRef}
           fill="none"
           stroke="#ffffff"
-          strokeWidth="2"             // tune this for your viewBox size
+          strokeWidth="2" // tune this for your viewBox size
           strokeLinejoin="round"
           strokeLinecap="round"
           vectorEffect="non-scaling-stroke"
@@ -77,10 +86,18 @@ export const HeroImageBlob = ()=> {
         />
 
         {/* hidden morph targets */}
-        <FourSidedCookie ref={fourRef} fill="none" style={{ display: "none" }} />
+        <FourSidedCookie
+          ref={fourRef}
+          fill="none"
+          style={{ display: "none" }}
+        />
         <SixSidedCookie ref={sixRef} fill="none" style={{ display: "none" }} />
-        <SevenSidedCookie ref={sevenRef} fill="none" style={{ display: "none" }} />
+        <SevenSidedCookie
+          ref={sevenRef}
+          fill="none"
+          style={{ display: "none" }}
+        />
       </svg>
     </div>
   );
-}
+};
