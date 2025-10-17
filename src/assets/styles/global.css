@@ -66,8 +66,12 @@
         @apply text-lg max-sm:text-md;
     }
 
+    .md-paragraph {
+        @apply md:text-xl!;
+    }
+
     .lg-paragraph {
-        @apply md:text-2xl;
+        @apply md:text-2xl!;
     }
 }
 
