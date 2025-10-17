@@ -16,7 +16,7 @@ export const Card = ({
   children,
   className,
   clickable = false,
-  as = "button",
+  as = "div",
   href,
   ...props
 }: CardProps) => {
