@@ -1,26 +1,15 @@
 import { Divider } from "@/app/components/divider";
-import { IconButton } from "@/app/components/icon-button";
-import { Text } from "@/app/components/text";
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Footer } from "@/app/components/layout/footer/footer";
+import { FooterIcons } from "@/app/components/layout/footer/footer-icons";
+import { FooterText } from "@/app/components/layout/footer/footer-text";
+import { Section } from "@/app/components/section";
 
 export const LayoutFooter = () => (
-  <footer className="flex flex-col items-center justify-center">
+  <Footer>
     <Divider infinite={true} />
-    <div className="w-[70%] flex flex-col gap-10 py-20">
-      <div className="flex flex-row gap-10 justify-center">
-        <IconButton as="a" href="https://github.com/iDarkQ/portfolio">
-          <Github color="white" size={48} />
-        </IconButton>
-        <IconButton as="a" href="https://instagram.com/iDarkQ">
-          <Instagram color="white" size={48} />
-        </IconButton>
-        <IconButton as="a" href="https://example.com/">
-          <Linkedin color="white" size={48} />
-        </IconButton>
-      </div>
-      <Text className="lg-paragraph! text-center">
-        Copyright © 2025 Łukasz. All rights reserved.
-      </Text>
-    </div>
-  </footer>
+    <Section as="div">
+      <FooterIcons />
+      <FooterText />
+    </Section>
+  </Footer>
 );
