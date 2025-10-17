@@ -15,18 +15,19 @@ import clsx from "clsx";
 export const Hero = () => (
   <Section
     className={clsx(
-      "py-40 max-lg:py-35 max-sm:py-20",
+      "min-h-[75vh] flex justify-center",
       "bg-[linear-gradient(90deg,var(--color-surface-1)_67%,var(--color-primary)_33%)]",
       "max-lg:bg-[linear-gradient(180deg,var(--color-surface-1)_67%,var(--color-primary)_33%)]"
     )}
     extraClassName={clsx(
-      "flex-row items-stretch justify-between btn-pt",
+      "flex-row items-stretch justify-between",
       "max-lg:flex-col"
     )}
+    first
   >
     <BottomLeftCorner />
     <TopRightCorner />
-    <div className="flex-1 gap-7 flex flex-col">
+    <div className="flex-1 gap-7 flex flex-col justify-center">
       <HeroHeader />
 
       <Divider />
