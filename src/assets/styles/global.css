@@ -35,9 +35,12 @@
     --text-5xl: 45px;
     --text-8xl: 88px;
 
+    --rotate-50: 50deg;
+    --rotate-15: 15deg;
+
     --spacing-xxl: 48px;
     --spacing-lg: 32px;
-    /* --spacing-btn-height: max-lg:h-15 h-20; */
+
     --btn-height: 80px;
     --icon-btn-height: 56px;
     --chip-container-height: 32px;
