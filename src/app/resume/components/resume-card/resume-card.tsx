@@ -27,6 +27,9 @@ export const ResumeCard = () => (
         <List
           className="max-lg:[&>*]:inline-flex!"
           items={[
+            "Turborepo",
+            "HTML",
+            "CSS",
             "JavaScript",
             "React",
             "TypeScript",
@@ -34,11 +37,10 @@ export const ResumeCard = () => (
             "Sass",
             "NestJS",
             "ExpressJS",
-            "ESNext",
             "Tailwind",
             "NodeJS",
             "Next.js",
-            "Postgres",
+            "PostgresSQL",
             "Prisma",
           ]}
         />
