@@ -21,7 +21,7 @@ export const ResumeProjectItem = ({
         {when}
       </Text>
     </header>
-    <Text className="md-paragraph lg:max-w-[70%]">{description}</Text>
-    <List className="lg:max-w-[70%]" items={keypoints} />
+    <Text className="lg:max-w-[80%] 2xl-max-w-[90%]">{description}</Text>
+    <List className="lg:max-w-[80%] 2xl-max-w-[90%]" items={keypoints} />
   </li>
 );
