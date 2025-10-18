@@ -8,36 +8,31 @@ export const ResumeProjects = () => (
       description="I developed the frontend and backend infrastructure, design and
         functionality for Better Bedrock's web app powered by React"
       keypoints={[
-        "Pioneering initiatives around the future of onboarding, signup and developing technical vision for them",
-        "Identified a gap in my team’s deployment workflow and built a solution that reduced the time required for each deployment from over 40 minutes to less than 6 minutes, which restores almost 300 hours of developer productivity every year",
-        "Collaborating with UX designers and researchers to inform the direction of products we craft",
-        "First-hand involvement in early-stage product and UX thinking and rapid prototyping",
+        "Architected and built the backend infrastructure with NestJS and PostgreSQL, including RESTful APIs and data-modeling to support user authentication, role-based access, projects creation, ad-system, analytics and other CRUD operations.",
+        "Developed the responsive frontend for the Better Bedrock web app using React, implementing clean component architecture.",
+        "Integrated full-stack features including Social login, JWT authentication, and secure data flows.",
+        "Deployed the platform on a VPS with CI/CD pipeline using GitHub Actions, achieving zero downtime on production releases.",
+        "Collaborated with UX/UI designer to create designs  for production-ready components.",
       ]}
     />
     <ResumeProjectItem
       name="Daylytic"
       when="Dec 2024 - May 2025"
-      description="Shaping the future of commerce and entrepreneurship – building and
-        advocating for inclusive and thoughtful experiences for over three
-        million merchants across the globe."
+      description="I developed a modern goal-achievement web app featuring routine tracking, project management, analytics, and AI-driven insights. Implemented with React (Ant Design), Fastify, PostgreSQL/Prisma, and Turborepo in a monorepo architecture."
       keypoints={[
-        "Pioneering initiatives around the future of onboarding, signup and developing technical vision for them",
-        "Identified a gap in my team’s deployment workflow and built a solution that reduced the time required for each deployment from over 40 minutes to less than 6 minutes, which restores almost 300 hours of developer productivity every year",
-        "Collaborating with UX designers and researchers to inform the direction of products we craft",
-        "First-hand involvement in early-stage product and UX thinking and rapid prototyping",
+        "Architected and implemented the backend APIs using Fastify, leveraging PostgreSQL with Prisma for data modelling (goals, projects, tasks, sessions) and schema validation via Zod for robust type-safety.",
+        "Integrated productivity features such as the built-in work-session timer (“Timelytic”), Markdown-based note-taking, and drag-&-drop task organization, enhancing user engagement through interactive UI components.",
+        "Developed the UI in React with Ant Design, implementing modules for routine tracking, goal/project management, calendar view and AI-powered daily assistance.",
       ]}
     />
     <ResumeProjectItem
-      name="RedLight Events Manager"
+      name="RedLight Events Manager //check"
       when="Jun 2025 - Jul 2025"
-      description="Shaping the future of commerce and entrepreneurship – building and
-        advocating for inclusive and thoughtful experiences for over three
-        million merchants across the globe."
+      description="Built an internal platform for Redlight Sports to manage company sports events. Developed in a Turborepo setup with a React + Vite frontend and a NestJS + Prisma/PostgreSQL backend."
       keypoints={[
-        "Pioneering initiatives around the future of onboarding, signup and developing technical vision for them",
-        "Identified a gap in my team’s deployment workflow and built a solution that reduced the time required for each deployment from over 40 minutes to less than 6 minutes, which restores almost 300 hours of developer productivity every year",
-        "Collaborating with UX designers and researchers to inform the direction of products we craft",
-        "First-hand involvement in early-stage product and UX thinking and rapid prototyping",
+        "Designed and implemented RESTful APIs with role-based access, JWT authentication, and CRUD operations for events and participants.",
+        "Added advanced features beyond the scope, including image uploads, Markdown event descriptions, admin role management, and calendar export Google Calendar.",
+        "Built intuitive event-listing and registration interfaces with map-based location selection and guest access.",
       ]}
     />
   </ul>
