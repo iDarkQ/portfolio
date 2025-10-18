@@ -7,10 +7,20 @@ import { ResumeProjects } from "@/app/resume/components/resume-card/resume-proje
 export const ResumeCard = () => (
   <Card className="flex flex-row max-lg:flex-col">
     <div className="gap-10 flex flex-col pb-10">
-      <section className="flex flex-col gap-1 max-lg:hidden">
-        <Text className="text-primary-80!">iDarkQ</Text>
+      <section className="flex flex-col gap-1">
+        <Text className="text-primary-80!">
+          <a href="https://idarkq.dev/">idarkq.dev</a>
+        </Text>
+        <Text className="text-primary-80!">
+          <a href="mailto:idarkq.dev@gmail.com">idarkq.dev@gmail.com</a>
+        </Text>
+        <Text className="text-primary-80!">
+          <a href="https://github.com/iDarkQ">github.com/iDarkQ</a>
+        </Text>
+        <Text className="text-primary-80!">
+          <a href="tel:+351927402792">+351 927 402 792</a>
+        </Text>
         <Text>Coimbra, Portugal</Text>
-        <Text className="text-primary-80!">idarkq.dev@gmail.com</Text>
       </section>
       <section className="flex flex-col gap-5">
         <Text as="h3">Core Technologies:</Text>
