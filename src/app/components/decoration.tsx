@@ -2,12 +2,13 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 
 interface Props {
+  animation?: string;
   className?: string;
   children?: ReactNode;
 }
 
-export const AboutDecorationItem = ({ className, children }: Props) => (
-  <div data-aos="flip-up" className={clsx("absolute", className && className)}>
+export const Decoration = ({ animation = "flip-up", className, children }: Props) => (
+  <div data-aos={animation} className={clsx("absolute", className && className)}>
     <svg
       viewBox="0 0 100 125"
       className="w-50 h-50"

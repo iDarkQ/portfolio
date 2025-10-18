@@ -6,33 +6,33 @@ import {
   AboutScrollDownButton,
   AboutCardBackend,
   AboutCardFrontend,
-  AboutDecorationItem,
   AboutDecorations,
   AboutPart,
 } from ".";
+import { Decoration } from "@/app/components/decoration";
 
 export const About = () => (
-  <Section className="lg:pt-10" extraClassName="items-center gap-10">
+  <Section className="lg:pt-10 pb-20" extraClassName="items-center gap-10">
     <AboutScrollDownButton />
     <AboutPart id="about">
       <AboutCardFrontend />
       <AboutDecorations className="right-0">
-        <AboutDecorationItem className="max-md:-left-12 max-md:-top-17">
+        <Decoration className="max-md:-left-12 max-md:-top-17 opacity-50">
           <ZigzagLineHorizontal />
-        </AboutDecorationItem>
-        <AboutDecorationItem className="rotate-45 bottom-10 right-10 max-md:-right-12 max-md:-bottom-17">
+        </Decoration>
+        <Decoration className="rotate-45 bottom-10 right-10 max-md:-right-12 max-md:-bottom-17 opacity-75">
           <ZigzagLine />
-        </AboutDecorationItem>
+        </Decoration>
       </AboutDecorations>
     </AboutPart>
     <AboutPart>
       <AboutDecorations className="z-1">
-        <AboutDecorationItem className="right-25 rotate-45 max-md:hidden">
+        <Decoration className="right-25 rotate-45 max-md:hidden opacity-45">
           <ZigzagLineHorizontal />
-        </AboutDecorationItem>
-        <AboutDecorationItem className="bottom-0 max-md:-left-28 max-md:-bottom-17">
+        </Decoration>
+        <Decoration className="bottom-0 max-md:-left-28 max-md:-bottom-17 opacity-35">
           <ZigzagLine />
-        </AboutDecorationItem>
+        </Decoration>
       </AboutDecorations>
       <AboutCardBackend />
     </AboutPart>
