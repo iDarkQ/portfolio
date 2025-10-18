@@ -48,10 +48,10 @@ export const Button = ({
       onClick={handleClick}
       className={clsx(
         "flex items-center justify-center relative overflow-hidden w-fit",
-        "text-xl font-[475] text-white",
+        "text-xl font-[475] text-on-primary",
         "rounded-xxl px-xxl btn-h max-lg:px-lg",
         "transition-[border-radius,font-weight,background-color,width, height] duration-200 ease-[cubic-bezier(.2,0,0,1)]",
-        filled ? "bg-primary" : "bg-transparent border-1 border-primary",
+        filled ? "bg-primary" : "bg-transparent border-1 border-primary text-neutral-90!",
         clickable && [
           "cursor-pointer",
           "active:font-normal",

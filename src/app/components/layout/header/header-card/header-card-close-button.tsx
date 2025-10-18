@@ -23,6 +23,6 @@ export const HeaderCardCloseButton = ({ expand, setExpand }: Props) => (
       expand && "lg:hidden!"
     )}
   >
-    <span className="material-symbols-outlined text-white">close</span>
+    <span className="material-symbols-outlined text-on-primary">close</span>
   </Button>
 );

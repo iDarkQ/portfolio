@@ -37,10 +37,10 @@ export const Card = ({
       href={href}
       target="_blank"
       className={clsx(
-        "rounded-lg p-14 bg-surface-1 text-white gap-5 flex flex-col relative overflow-hidden",
+        "rounded-lg p-14 bg-surface-1 text-neutral-90 gap-5 flex flex-col relative overflow-hidden",
         "transition-[border-radius,background-color] duration-200 ease-[cubic-bezier(.2,0,0,1)]",
         "max-sm:p-8",
-        clickable && "active:rounded-xxl active:bg-secondary-container cursor-pointer hover:brightness-105",
+        clickable && "active:rounded-xxl hover:bg-secondary-container cursor-pointer",
         className
       )}
       {...props}

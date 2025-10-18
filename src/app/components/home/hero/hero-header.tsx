@@ -2,6 +2,6 @@ import { Text } from "@/app/components/text";
 
 export const HeroHeader = () => (
   <Text as="h1">
-    Full-Stack Developer<span className="text-white">.</span>
+    Full-Stack Developer<span className="text-primary">.</span>
   </Text>
 );

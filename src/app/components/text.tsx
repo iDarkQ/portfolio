@@ -7,9 +7,9 @@ interface Props {
   className?: string;
 }
 
-const baseHeading = "text-[var(--color-primary)] font-[475] leading-[0.75]";
+const baseHeading = "text-[var(--color-on-surface-variant)] font-[475]";
 const styles = {
-  p: clsx("text-white paragraph"),
+  p: clsx("text-neutral-90 paragraph"),
 
   h1: clsx(
     `text-8xl ${baseHeading}`, // normal
