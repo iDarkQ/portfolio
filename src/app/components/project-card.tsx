@@ -1,7 +1,7 @@
 import { Card } from "@/app/components/card";
 import { Chip } from "@/app/components/chip";
 import { Text } from "@/app/components/text";
-import { ProjectData } from "@/app/projects/utils/project-data";
+import { ProjectData } from "@/app/projects/data/project-data";
 import Image from "next/image";
 
 interface ProjectCardProps {
@@ -26,7 +26,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <Text className="pointer-events-none">{project.description}</Text>
         <div className="flex flex-row flex-wrap gap-3 w-full">
           {project.tags.map((tag, index) => (
-            <Chip key={index} text={tag} />
+            <Chip key={index}>{tag}</Chip>
           ))}
         </div>
       </div>
