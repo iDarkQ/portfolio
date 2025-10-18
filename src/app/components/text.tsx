@@ -12,7 +12,7 @@ const styles = {
   p: clsx("text-neutral-90 paragraph"),
 
   h1: clsx(
-    `text-8xl ${baseHeading}`, // normal
+    `text-8xl ${baseHeading} leading-[0.75]`, // normal
     `max-xs:text-5xl max-sm:text-6xl max-lg:text-7xl` // normal
   ),
   h2: clsx(
