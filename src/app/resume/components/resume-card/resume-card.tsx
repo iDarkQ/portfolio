@@ -65,28 +65,27 @@ export const ResumeCard = () => (
         <Text as="h3">Languages:</Text>
         <List
           className="max-lg:[&>*]:inline-flex!"
-          items={["English C2", "Polish C2", "Portuguese B2"]}
+          items={["English C2", "Polish C2", "Portuguese B2+"]}
         />
       </section>
     </div>
     <article className="gap-10 flex flex-col">
       <header className="gap-5 flex flex-col">
         <Text as="h1">Łukasz</Text>
-        <Text as="h2" className="text-white">
+        <Text as="h2" className="text-neutral-90">
           Junior Full-stack Developer
         </Text>
         <Text className="md-paragraph pt-5">
-          Engineer striving for expanding knowledge and driven by long-living
-          passion to programming. I don&apos;t just code, I craft quality,
-          user-friendly and scalable products regardless of stack.
+          Engineer striving for expanding knowledge and driven by a long-living
+          passion for programming. I don&apos;t just code, I craft quality,
+          user-friendly and scalable products regardless of the stack.
         </Text>
       </header>
       <Divider infinite />
       <section className="flex flex-col gap-5">
         <Text as="h3">Projects</Text>
         <Text as="p" className="md-paragraph">
-          I’ve worked on a handful of web projects, each with a purpose, and
-          each publicly available along the source code:
+          I’ve worked on a handful of web projects, utilizing various technologies, here is the list of my proudest work:
         </Text>
         <ResumeProjects />
       </section>
