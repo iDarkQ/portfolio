@@ -3,7 +3,7 @@ import { Text } from "@/app/components/text";
 
 export const AboutCardBackend = () => (
   <AboutCard data-aos="fade-left" className="ml-auto">
-    <Text as="h2" className="text-start">
+    <Text as="h2" className="text-start text-primary-80">
       Backend
     </Text>
     <Text as="p" className="text-start">
