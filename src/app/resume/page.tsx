@@ -1,3 +1,4 @@
+import { Divider } from "@/app/components/divider";
 import { Section } from "@/app/components/section";
 import { ResumeCard } from "@/app/resume/components/resume-card/resume-card";
 import { ResumeDescription } from "@/app/resume/components/resume-description";
@@ -9,6 +10,9 @@ export default function Resume() {
       <div className="w-full flex flex-col items-center justify-center gap-5">
         <ResumeHeading />
         <ResumeDescription />
+      </div>
+      <div className="inline-flex justify-center">
+        <Divider />
       </div>
       <ResumeCard />
     </Section>

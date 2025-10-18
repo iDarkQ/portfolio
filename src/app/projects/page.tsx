@@ -1,3 +1,4 @@
+import { Divider } from "@/app/components/divider";
 import { Section } from "@/app/components/section";
 import { ProjectsDescription } from "@/app/projects/components/projects-description";
 import { ProjectsHeading } from "@/app/projects/components/projects-heading";
@@ -9,6 +10,9 @@ export default function Project() {
       <div className="w-full flex flex-col items-center justify-center gap-5">
         <ProjectsHeading />
         <ProjectsDescription />
+      </div>
+      <div className="inline-flex justify-center">
+        <Divider />
       </div>
       <ProjectsList />
     </Section>
