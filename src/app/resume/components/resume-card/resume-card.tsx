@@ -1,25 +1,22 @@
 import { Card } from "@/app/components/card";
 import { Divider } from "@/app/components/divider";
 import { List } from "@/app/components/list";
-import { Text } from "@/app/components/text";
+import { darkResume, Text } from "@/app/components/text";
+import { ResumeCardLink } from "@/app/resume/components/resume-card/resume-card-link";
+
 import { ResumeProjects } from "@/app/resume/components/resume-card/resume-project";
+import clsx from "clsx";
 
 export const ResumeCard = () => (
-  <Card className="flex flex-row max-lg:flex-col">
+  <Card
+    className={clsx("flex flex-row max-lg:flex-col", !darkResume && "bg-white")}
+  >
     <div className="gap-10 flex flex-col pb-10">
       <section className="flex flex-col gap-1">
-        <Text className="text-primary-80!">
-          <a href="https://idarkq.dev/">idarkq.dev</a>
-        </Text>
-        <Text className="text-primary-80!">
-          <a href="mailto:idarkq.dev@gmail.com">idarkq.dev@gmail.com</a>
-        </Text>
-        <Text className="text-primary-80!">
-          <a href="https://github.com/iDarkQ">github.com/iDarkQ</a>
-        </Text>
-        <Text className="text-primary-80!">
-          <a href="tel:+351927402792">+351 927 402 792</a>
-        </Text>
+        <ResumeCardLink link="https://idarkq.dev/">idarkq.dev</ResumeCardLink>
+        <ResumeCardLink link="mailto:idarkq.dev@gmail.com">idarkq.dev@gmail.com</ResumeCardLink>
+        <ResumeCardLink link="https://github.com/iDarkQ">github.com/iDarkQ</ResumeCardLink>
+        <ResumeCardLink link="tel:+351927402792">+351 927 402 792</ResumeCardLink>
         <Text>Coimbra, Portugal</Text>
       </section>
       <section className="flex flex-col gap-5">
@@ -72,7 +69,12 @@ export const ResumeCard = () => (
     <article className="gap-10 flex flex-col">
       <header className="gap-5 flex flex-col">
         <Text as="h1">Łukasz</Text>
-        <Text as="h2" className="text-neutral-90">
+        <Text
+          as="h2"
+          className={
+            darkResume ? "text-neutral-90" : "text-light-on-background"
+          }
+        >
           Junior Full-stack Developer
         </Text>
         <Text className="md-paragraph pt-5">
@@ -85,7 +87,8 @@ export const ResumeCard = () => (
       <section className="flex flex-col gap-5">
         <Text as="h3">Projects</Text>
         <Text as="p" className="md-paragraph">
-          I’ve worked on a handful of web projects, utilizing various technologies, here is the list of my proudest work:
+          I’ve worked on a handful of web projects, utilizing various
+          technologies, here is the list of my proudest work:
         </Text>
         <ResumeProjects />
       </section>
