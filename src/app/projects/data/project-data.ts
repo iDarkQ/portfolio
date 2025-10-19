@@ -1,3 +1,5 @@
+import Portfolio from "@/assets/images/site.png";
+
 export interface ProjectData {
     name: string;
     description: string;
@@ -59,6 +61,21 @@ export const projects: ProjectData[] = [
             "Swagger",
             "Turborepo",
             "OpenAPI",
+        ],
+    },
+    {
+        name: "Personal Website",
+        description:
+            "A web platform created to let me introduce myself, show the projects I am most proud of, and a place where you can find my resume.",
+        image:
+            Portfolio.src,
+        link: "https://github.com/iDarkQ/redlight-events-manager",
+        tags: [
+            "React",
+            "NextJS",
+            "Tailwind CSS",
+            "CSS",
+            "Typescript",
         ],
     },
 ];
