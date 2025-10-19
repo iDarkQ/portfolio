@@ -1,10 +1,12 @@
 "use client";
 
 import { Button } from "@/app/components/button";
-import { HeaderAnchors } from "@/app/components/layout/header/header-card/header-anchors";
-import { HeaderCardAction } from "@/app/components/layout/header/header-card/header-card-action";
-import { HeaderCardCloseButton } from "@/app/components/layout/header/header-card/header-card-close-button";
-import { HeaderCardInner } from "@/app/components/layout/header/header-card/header-card-inner";
+import {
+  HeaderAnchors,
+  HeaderCardAction,
+  HeaderCardCloseButton,
+  HeaderCardInner,
+} from "@/app/components/layout/header";
 import clsx from "clsx";
 import { useState } from "react";
 

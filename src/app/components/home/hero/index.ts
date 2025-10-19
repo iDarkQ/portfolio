@@ -5,5 +5,4 @@ export * from "./hero-highlights";
 export * from "./hero-highlight-message";
 export * from "./hero-header";
 export * from "./hero";
-export * from "./decorations/bottom-left-corner";
-export * from "./decorations/top-right-corner";
+export * from "./decorations";

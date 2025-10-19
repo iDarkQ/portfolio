@@ -1,5 +1,4 @@
-import { ProcessCardTitle } from "@/app/components/home/process/prcoess-card-title";
-import { ProcessCardDescription } from "@/app/components/home/process/process-card-description";
+import { ProcessCardDescription, ProcessCardTitle } from ".";
 
 export const ProcessCard = () => (
   <div

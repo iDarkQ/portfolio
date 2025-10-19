@@ -1,4 +1,4 @@
-import { AboutCard } from "@/app/components/home/about/about-card";
+import { AboutCard } from ".";
 import { Text } from "@/app/components/text";
 
 export const AboutCardBackend = () => (

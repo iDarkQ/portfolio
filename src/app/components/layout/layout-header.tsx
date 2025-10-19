@@ -1,6 +1,8 @@
-import { Header } from "@/app/components/layout/header/header";
-import { HeaderHomeButton } from "@/app/components/layout/header/header-home-button";
-import { HeaderCard } from "@/app/components/layout/header/header-card/header-card";
+import {
+  Header,
+  HeaderHomeButton,
+  HeaderCard,
+} from "@/app/components/layout/header";
 
 export const LayoutHeader = () => (
   <Header>

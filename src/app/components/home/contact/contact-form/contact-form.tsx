@@ -1,7 +1,7 @@
 import {
   ContactFormButton,
   ContactFormField,
-} from "@/app/components/home/contact";
+} from ".";
 
 export const ContactForm = () => (
   <form action="/search" className="w-full flex flex-col items-center gap-10">

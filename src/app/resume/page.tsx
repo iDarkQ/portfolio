@@ -1,8 +1,6 @@
 import { Divider } from "@/app/components/divider";
 import { Section } from "@/app/components/section";
-import { ResumeCard } from "@/app/resume/components/resume-card/resume-card";
-import { ResumeDescription } from "@/app/resume/components/resume-description";
-import { ResumeHeading } from "@/app/resume/components/resume-heading";
+import { ResumeHeading, ResumeDescription, ResumeCard } from "@/app/resume/components";
 
 export default function Resume() {
   return (

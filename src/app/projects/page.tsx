@@ -1,8 +1,6 @@
 import { Divider } from "@/app/components/divider";
 import { Section } from "@/app/components/section";
-import { ProjectsDescription } from "@/app/projects/components/projects-description";
-import { ProjectsHeading } from "@/app/projects/components/projects-heading";
-import { ProjectsList } from "@/app/projects/components/projects-list";
+import { ProjectsHeading, ProjectsDescription, ProjectsList } from "@/app/projects/components";
 
 export default function Project() {
   return (

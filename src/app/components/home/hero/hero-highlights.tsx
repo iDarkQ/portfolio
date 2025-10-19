@@ -1,4 +1,4 @@
-import { HeroHighlightMessage } from "@/app/components/home/hero/hero-highlight-message";
+import { HeroHighlightMessage } from ".";
 
 export const HeroHighlights = () => (
   <div className="flex flex-row gap-4 max-lg:pt-10 max-md:pt-5">
