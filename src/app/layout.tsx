@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
 import "@/assets/styles/global.css";
+
+import type { Metadata } from "next";
 import { AOSInit } from "@/app/components/aos";
-import { LayoutFooter, LayoutHeader } from "@/app/components/home";
+import { LayoutHeader, LayoutFooter } from "@/app/components/layout";
 
 export const metadata: Metadata = {
   title: "iDarkQ",
@@ -16,12 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit />
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        />
-      </head>
       <body className="relative">
         <LayoutHeader />
         <main>{children}</main>
