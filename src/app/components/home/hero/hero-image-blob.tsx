@@ -6,7 +6,7 @@ import MorphSVGPlugin from "gsap/MorphSVGPlugin";
 import { FourSidedCookie } from "@/app/components/shapes/four-sided-cookie";
 import { SixSidedCookie } from "@/app/components/shapes/six-sided-cookie";
 import { SevenSidedCookie } from "@/app/components/shapes/seven-sided-cookie";
-import portfolioPic from "@/assets/images/portfolio.jpg";
+import portfolioPic from "@/assets/images/portfolio.webp";
 
 gsap.registerPlugin(MorphSVGPlugin);
 

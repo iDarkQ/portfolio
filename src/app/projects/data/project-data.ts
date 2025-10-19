@@ -1,4 +1,4 @@
-import Portfolio from "@/assets/images/site.png";
+import Portfolio from "@/assets/images/site.webp";
 
 export interface ProjectData {
     name: string;
