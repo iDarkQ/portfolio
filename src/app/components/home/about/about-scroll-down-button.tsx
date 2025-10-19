@@ -1,6 +1,7 @@
 "use client";
 
 import { IconButton } from "@/app/components/icon-button";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 export const AboutScrollDownButton = () => {
   const scrollDown = () => {
@@ -14,9 +15,7 @@ export const AboutScrollDownButton = () => {
       filled
       onClick={scrollDown}
     >
-      <span className="text-xl material-symbols-outlined">
-        keyboard_arrow_down
-      </span>
+      <MdOutlineKeyboardArrowDown className="text-xl material-symbols-outlined" />
     </IconButton>
   );
 };
