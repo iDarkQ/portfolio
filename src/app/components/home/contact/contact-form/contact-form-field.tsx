@@ -7,7 +7,12 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   as?: "input" | "textarea";
 }
 
-export const ContactFormField = ({ as = "input", className, field, ...rest }: Props) => {
+export const ContactFormField = ({
+  as = "input",
+  className,
+  field,
+  ...rest
+}: Props) => {
   const Component = as;
 
   return (

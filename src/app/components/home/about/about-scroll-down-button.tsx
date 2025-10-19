@@ -9,7 +9,11 @@ export const AboutScrollDownButton = () => {
   };
 
   return (
-    <IconButton className="animate-bounce max-lg:hidden" filled onClick={scrollDown}>
+    <IconButton
+      className="animate-bounce max-lg:hidden"
+      filled
+      onClick={scrollDown}
+    >
       <span className="text-xl material-symbols-outlined">
         keyboard_arrow_down
       </span>

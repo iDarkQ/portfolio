@@ -3,7 +3,7 @@ import { useRef } from "react";
 import clsx from "clsx";
 import { HTMLElement } from "@/app/components/button";
 
-export function useRipple(filled: boolean = true) {
+export const useRipple = (filled: boolean = true) => {
   const ref = useRef<HTMLElement>(null);
 
   const createRipple = (event: React.MouseEvent<HTMLElement>) => {

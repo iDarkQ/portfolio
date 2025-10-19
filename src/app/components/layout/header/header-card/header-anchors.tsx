@@ -14,7 +14,7 @@ interface Props {
   setExpand: Dispatch<SetStateAction<boolean>>;
 }
 
-export const HeaderAnchors = ({setExpand}: Props) =>
+export const HeaderAnchors = ({ setExpand }: Props) =>
   Object.keys(pages).map((pName, index) => (
     <nav key={index}>
       <Link

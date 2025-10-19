@@ -39,7 +39,6 @@ export const HeroImageBlob = () => {
       defaults: { duration: 0.8, ease: "power4.out" },
     });
 
-    // morph both the clip geometry AND the visible stroke path in lock-step
     tl.to([clipPathEl, strokeEl], { morphSVG: six })
       .to([clipPathEl, strokeEl], { morphSVG: seven })
       .to([clipPathEl, strokeEl], { morphSVG: four });
@@ -59,7 +58,6 @@ export const HeroImageBlob = () => {
       <svg ref={svgRef} viewBox="0 0 24 24" width="auto" height="100%">
         <defs>
           <clipPath id="blobClip">
-            {/* this path defines clipping only (not visible) */}
             <FourSidedCookie ref={clipPathRef} fill="#000" />
           </clipPath>
         </defs>
@@ -73,19 +71,16 @@ export const HeroImageBlob = () => {
           className="z-10"
         />
 
-        {/* visible stroke drawn above the image */}
         <FourSidedCookie
           ref={strokeRef}
           fill="none"
           stroke="#ffffff"
-          strokeWidth="2" // tune this for your viewBox size
+          strokeWidth="2"
           strokeLinejoin="round"
           strokeLinecap="round"
           vectorEffect="non-scaling-stroke"
           style={{ pointerEvents: "none" }}
         />
-
-        {/* hidden morph targets */}
         <FourSidedCookie
           ref={fourRef}
           fill="none"

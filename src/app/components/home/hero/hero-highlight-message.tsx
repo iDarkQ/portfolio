@@ -1,11 +1,9 @@
 import { Text } from "@/app/components/text";
 
 interface Props {
-    children: string;
+  children: string;
 }
 
-export const HeroHighlightMessage = ({children}: Props) => (
-  <Text className="max-sm:text-xs text-sm text-primary-80!">
-    {children}
-  </Text>
+export const HeroHighlightMessage = ({ children }: Props) => (
+  <Text className="max-sm:text-xs text-sm text-primary-80!">{children}</Text>
 );
