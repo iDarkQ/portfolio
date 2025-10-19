@@ -7,11 +7,11 @@ export const AboutCardFrontend = () => (
       Frontend
     </Text>
     <Text as="p" className="text-start">
-      I’m not only a perfectionist in what the user sees, but also in what the developer
-      experiences. In my free time, you will catch me refining and simplifying
-      components, animations, and layouts. I don&apos;t admire complexity, but
-      simplicity. I live for building interfaces that feel smooth, intuitive,
-      and just a little bit magical ✨
+      I’m not only a perfectionist in what the user sees, but also in what the
+      developer experiences. In my free time, you will catch me refining and
+      simplifying components, animations, and layouts. I don&apos;t admire
+      complexity, but simplicity. I live for building interfaces that feel
+      smooth, intuitive, and just a little bit magical ✨
     </Text>
   </AboutCard>
 );
