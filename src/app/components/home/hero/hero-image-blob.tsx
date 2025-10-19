@@ -55,7 +55,7 @@ export const HeroImageBlob = () => {
 
   return (
     <div className="h-[100%] max-h-100">
-      <svg ref={svgRef} viewBox="0 0 24 24" height="100%">
+      <svg ref={svgRef} viewBox="0 0 24 24" width="100%" height="100%">
         <defs>
           <clipPath id="blobClip">
             <FourSidedCookie ref={clipPathRef} fill="#000" />
