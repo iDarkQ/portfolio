@@ -13,7 +13,18 @@ export const metadata: Metadata = {
 };
 
 const googleFont = localFont({
-  src: "../assets/fonts/GoogleSansFlex.ttf",
+  src: [
+    {
+      path: "../assets/fonts/google-sans.woff2",
+      weight: "475",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/google-sans-bold.woff2",
+      weight: "500",
+      style: "bold",
+    },
+  ],
 });
 
 export default function RootLayout({
