@@ -1,4 +1,5 @@
 import { Star } from "@/app/components/shapes/star";
+import { darkResume } from "@/app/components/text";
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
 
@@ -13,7 +14,7 @@ export const List = ({ items, className, ...rest }: Props) => (
       const position = (index % 3) + 1;
 
       return (
-        <li key={index} className="relative flex paragraph">
+        <li key={index} className={clsx("relative flex paragraph", !darkResume && "text-light-on-background!")}>
           <span
             className={clsx(
               "transition-transform m-2 h-fit",

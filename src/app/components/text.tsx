@@ -7,9 +7,15 @@ interface Props {
   className?: string;
 }
 
-const baseHeading = "text-[var(--color-on-surface-variant)] font-[475]";
+export const darkResume = true;
+
+const baseHeading =
+  (darkResume ? "text-on-surface-variant" : "text-neutral-10") + " font-[475]";
 const styles = {
-  p: clsx("text-neutral-90 paragraph"),
+  p: clsx(
+    (darkResume ? "text-neutral-90" : "text-light-on-surface-variant") +
+      " paragraph"
+  ),
 
   h1: clsx(
     `text-8xl ${baseHeading} leading-[0.75]`, // normal

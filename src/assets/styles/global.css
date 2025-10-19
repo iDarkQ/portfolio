@@ -1,17 +1,25 @@
+@import "material-symbols";
 @import "tailwindcss";
 
+
 @font-face {
-    font-family: 'Google Sans2';
+    font-family: 'Google Sans';
     src: url('../fonts/GoogleSansFlex.ttf') format('truetype');
 }
 
 @theme inline {
+    --color-light-primary: #6442d6;
     --color-primary: #9f86ff;
     --color-tertiary-container: #553f5d;
     --color-secondary-container: #45455a;
     --color-on-surface-variant: #cbc4cc;
+    --color-light-surface-variant: #cbc4cc;
+    --color-on-surface: #1c1b1d;
+    --color-light-on-background: #1c1b1d;
+    --color-light-on-surface-variant: #4d4256;
     --color-surface-variant: #4d4256;
     --color-primary-80: #ccbeff;
+    --color-neutral-10: #1c1b1d;
     --color-neutral-90: #e6e1e3;
     --color-background: #141314;
     --color-on-surface: #1f1f1f;
@@ -102,21 +110,9 @@
 
 body {
     background-color: var(--color-background);
-    /* url(../fonts/google-sans-webfont/style.css) */
-    font-family: "Google Sans2";
+    font-family: "Google Sans";
 }
 
 .material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
-    font-weight: normal;
-    font-style: normal;
     font-size: 32px !important;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
 }
