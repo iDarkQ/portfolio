@@ -1,12 +1,6 @@
 @import "material-symbols";
 @import "tailwindcss";
 
-
-@font-face {
-    font-family: 'Google Sans';
-    src: url('../fonts/GoogleSansFlex.ttf') format('truetype');
-}
-
 @theme inline {
     --color-light-primary: #6442d6;
     --color-primary: #9f86ff;
@@ -110,7 +104,6 @@
 
 body {
     background-color: var(--color-background);
-    font-family: "Google Sans";
 }
 
 .material-symbols-outlined {
