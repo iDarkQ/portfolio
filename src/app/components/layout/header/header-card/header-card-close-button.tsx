@@ -1,6 +1,7 @@
 import { Button } from "@/app/components/button";
 import clsx from "clsx";
 import { Dispatch, SetStateAction } from "react";
+import { MdClose } from "react-icons/md";
 
 interface Props {
   expand: boolean;
@@ -23,6 +24,6 @@ export const HeaderCardCloseButton = ({ expand, setExpand }: Props) => (
       expand && "lg:hidden!"
     )}
   >
-    <span className="material-symbols-outlined text-on-primary">close</span>
+    <MdClose className="material-symbols-outlined text-on-primary" />
   </Button>
 );

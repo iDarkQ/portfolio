@@ -2175,11 +2175,6 @@ magic-string@^0.30.19:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.5"
 
-material-symbols@^0.38.0:
-  version "0.38.0"
-  resolved "https://registry.yarnpkg.com/material-symbols/-/material-symbols-0.38.0.tgz#dd4a300b925a687d851d84c39066368aec122acc"
-  integrity sha512-D5iMbWoiOSWsO989KN8DXd8CpmZ71D8F5A2q3T2dn69JU3Rody36hXQ+0nVXvBGX3+zPaFYCkcSrfC1oWYnHYg==
-
 math-intrinsics@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz"

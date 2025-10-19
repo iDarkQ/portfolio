@@ -4,11 +4,11 @@ export const ResumeProjects = () => (
   <ul className="flex flex-col gap-5">
     <ResumeProjectItem
       name="Better Bedrock"
-      when="Oct 2024 - Oct 2025"
+      when="Oct 2024 - Present"
       description="I developed the frontend and backend infrastructure, design and
         functionality for Better Bedrock's web app powered by React"
       keypoints={[
-        "Architected and built the backend infrastructure with NestJS and PostgreSQL, including RESTful APIs and data-modeling to support user authentication, role-based access, projects creation, ad-system, analytics and other CRUD operations.",
+        "Architected and built the backend infrastructure with NestJS and PostgreSQL, including RESTful APIs and data-modeling to support user authentication, role-based access, project creation, ad-system, analytics and other CRUD operations.",
         "Developed the responsive frontend for the Better Bedrock web app using React, implementing clean component architecture.",
         "Integrated full-stack features including Social login, JWT authentication, and secure data flows.",
         "Deployed the platform on a VPS with CI/CD pipeline using GitHub Actions, achieving zero downtime on production releases.",
@@ -28,7 +28,7 @@ export const ResumeProjects = () => (
     <ResumeProjectItem
       name="RedLight Events Manager //check"
       when="Jun 2025 - Jul 2025"
-      description="Built an internal platform for Redlight Sports to manage company sports events. Developed in a Turborepo setup with a React + Vite frontend and a NestJS + Prisma/PostgreSQL backend."
+      description="Built an internal platform for Redlight to manage company sports events. Developed in a Turborepo setup with a React + Vite frontend and a NestJS + Prisma/PostgreSQL backend."
       keypoints={[
         "Designed and implemented RESTful APIs with role-based access, JWT authentication, and CRUD operations for events and participants.",
         "Added advanced features beyond the scope, including image uploads, Markdown event descriptions, admin role management, and calendar export Google Calendar.",
