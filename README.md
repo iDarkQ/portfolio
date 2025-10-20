@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Personal Portfolio
 
-## Getting Started
+Welcome to my personal portfolio!  
+You can check it out live at **[idarkq.dev](https://idarkq.dev)** 🚀
 
-First, run the development server:
+This project was built with **Next.js** and **TailwindCSS**, combining performance, scalability, and modern design.
+
+---
+
+## ⚡ Features
+- Sleek and responsive design powered by TailwindCSS
+- Built with Next.js for fast rendering and routing
+- Contact section with SMTP integration (optional)
+- Easy setup with Yarn
+
+---
+
+## 🛠️ Getting Started
+
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
 
-## Learn More
+Your app will be available at [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+----------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📩 Contact Section Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you want the **Contact** section on the homepage to work, you’ll need to configure SMTP credentials.  
+Create a `.env` file in the root directory and add the following:
 
-## Deploy on Vercel
+```env
+SMTP_HOST=your_smtp_host
+SMTP_PORT=your_smtp_port
+SMTP_USER=your_smtp_user
+SMTP_PASS=your_smtp_password
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+----------
+
+## 📦 Tech Stack
+
+-   [Next.js](https://nextjs.org/) – React framework for production
+-   [React](https://react.dev/) – Component-based UI library
+-   [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction) – Built-in backend endpoints for serverless functions
+-   [TypeScript](https://www.typescriptlang.org/) – Strongly typed JavaScript for safer, scalable code
+-   [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework
+-   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) – Core styling language for the web
+-   [React Hook Form (RHF)](https://react-hook-form.com/) – Performant, flexible form management
+-   [Vercel](https://vercel.com/) – Deployment and hosting platform optimized for Next.js
+-   [Yarn](https://yarnpkg.com/) – Dependency management
+
+----------
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+----------
+
+✨ Thanks for checking out my portfolio! Feel free to fork, star ⭐, or reach out if you’d like to collaborate.
