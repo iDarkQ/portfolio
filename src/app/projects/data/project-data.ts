@@ -66,7 +66,7 @@ export const projects: ProjectData[] = [
     {
         name: "Personal Website",
         description:
-            "A web platform created to let me introduce myself, show the projects I am most proud of, and a place where you can find my resume.",
+            "A modern personal portfolio website built with Next.js and Tailwind CSS. It serves as a central hub to introduce myself, showcase my featured projects, and provide easy access to my resume. Designed with a clean UI, responsive layout, and smooth user experience, the platform underlines both my technical skills and creative approach to web development.",
         image:
             Portfolio.src,
         link: "https://github.com/iDarkQ/redlight-events-manager",
@@ -76,6 +76,9 @@ export const projects: ProjectData[] = [
             "Tailwind CSS",
             "CSS",
             "Typescript",
+            "React Hook Form",
+            "Vercel",
+            "NextJS API Router"
         ],
     },
 ];
