@@ -69,7 +69,7 @@ export const projects: ProjectData[] = [
             "A modern personal portfolio website built with Next.js and Tailwind CSS. It serves as a central hub to introduce myself, showcase my featured projects, and provide easy access to my resume. Designed with a clean UI, responsive layout, and smooth user experience, the platform underlines both my technical skills and creative approach to web development.",
         image:
             Portfolio.src,
-        link: "https://github.com/iDarkQ/redlight-events-manager",
+        link: "https://github.com/iDarkQ/portfolio",
         tags: [
             "React",
             "NextJS",
