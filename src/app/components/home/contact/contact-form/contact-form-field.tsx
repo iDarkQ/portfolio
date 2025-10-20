@@ -1,22 +1,27 @@
+import { Text } from "@/app/components/text";
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
+import { FieldError } from "react-hook-form";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   className?: string;
   field?: string;
   as?: "input" | "textarea";
+  error?: FieldError | undefined;
 }
 
 export const ContactFormField = ({
   as = "input",
   className,
   field,
+  error,
   ...rest
 }: Props) => {
   const Component = as;
 
   return (
     <div {...rest} className={clsx("flex flex-col-reverse gap-1", className)}>
+      {error && <Text className="text-red-400">{error.message}</Text>}
       <Component
         id={field}
         name={field}
@@ -32,7 +37,7 @@ export const ContactFormField = ({
         htmlFor={field}
         className={clsx("paragraph text-primary-80", "peer-focus:text-primary")}
       >
-        Your {field}
+        Your {field} *
       </label>
     </div>
   );
