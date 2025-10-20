@@ -5,15 +5,11 @@ You can check it out live at **[idarkq.dev](https://idarkq.dev)** 🚀
 
 This project was built with **Next.js** and **TailwindCSS**, combining performance, scalability, and modern design.
 
----
-
 ## ⚡ Features
 - Sleek and responsive design powered by TailwindCSS
 - Built with Next.js for fast rendering and routing
 - Contact section with SMTP integration (optional)
 - Easy setup with Yarn
-
----
 
 ## 🛠️ Getting Started
 
@@ -33,8 +29,6 @@ yarn dev
 
 Your app will be available at [http://localhost:3000](http://localhost:3000).
 
-----------
-
 ## 📩 Contact Section Setup
 
 If you want the **Contact** section on the homepage to work, you’ll need to configure SMTP credentials.  
@@ -48,8 +42,6 @@ SMTP_PASS=your_smtp_password
 
 ```
 
-----------
-
 ## 📦 Tech Stack
 
 -   [Next.js](https://nextjs.org/) – React framework for production
@@ -62,12 +54,8 @@ SMTP_PASS=your_smtp_password
 -   [Vercel](https://vercel.com/) – Deployment and hosting platform optimized for Next.js
 -   [Yarn](https://yarnpkg.com/) – Dependency management
 
-----------
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-----------
 
 ✨ Thanks for checking out my portfolio! Feel free to fork, star ⭐, or reach out if you’d like to collaborate.
