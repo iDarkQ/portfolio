@@ -4,7 +4,7 @@ import { Section } from "@/app/components/section";
 export const Process = () => (
   <Section
     className="bg-primary"
-    extraClassName="flex-row gap-10 max-lg:flex-col"
+    extraClassName="flex-row gap-10 max-lg:flex-col items-center"
   >
     <div className="flex-1">
       <ProcessCard />
