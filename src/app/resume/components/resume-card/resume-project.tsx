@@ -26,7 +26,7 @@ export const ResumeProjects = () => (
       ]}
     />
     <ResumeProjectItem
-      name="RedLight Events Manager //check"
+      name="RedLight Events Manager (application project)"
       when="Jun 2025 - Jul 2025"
       description="Built an internal platform for Redlight to manage company sports events. Developed in a Turborepo setup with a React + Vite frontend and a NestJS + Prisma/PostgreSQL backend."
       keypoints={[
