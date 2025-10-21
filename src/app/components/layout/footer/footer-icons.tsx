@@ -9,8 +9,8 @@ export const FooterIcons = () => (
     <IconButton as="a" href="https://instagram.com/iDarkQ">
       <Instagram color="white" size={48} />
     </IconButton>
-    <IconButton as="a" href="https://example.com/">
+    {/* <IconButton as="a" href="https://example.com/">
       <Linkedin color="white" size={48} />
-    </IconButton>
+    </IconButton> */}
   </div>
 );
