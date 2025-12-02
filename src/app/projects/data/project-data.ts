@@ -10,6 +10,25 @@ export interface ProjectData {
 
 export const projects: ProjectData[] = [
     {
+        name: "ROTUNDÁSPREITA",
+        description:
+            "A web platform built around exam preparation for driving-school instructors and directors. It lets users create an account, take timed mini-exams, track their performance across hundreds of official questions, and study by theme or difficulty. The platform’s goal is to help candidates practice efficiently, and identify weak areas through detailed analytics.",
+        image:
+            "https://raw.githubusercontent.com/iDarkQ/rotundaspreita-web/refs/heads/main/docs/website-preview.png?token=GHSAT0AAAAAADLHBUFQUUOZY4TN5YZIZBO42JPKLJQ",
+        link: "https://github.com/iDarkQ/rotundaspreita-web",
+        tags: [
+            "NextJS",
+            "React",
+            "Tailwind CSS",
+            "Typescript",
+            "Prisma",
+            "Postgres",
+            "HeadlessUI",
+            "JWT",
+            "Stripe",
+        ],
+    },
+    {
         name: "Better Bedrock",
         description:
             "A web platform built around a Minecraft-based ecosystem: it lets users sign up, upload and manage their projects, browse and download works from others, and leave ratings and comments. Its purpose is to enable creators to share content, build reputation through community feedback, and receive money for each download via our ad provider.",
