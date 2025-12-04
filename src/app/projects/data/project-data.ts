@@ -14,7 +14,7 @@ export const projects: ProjectData[] = [
         description:
             "A web platform built around exam preparation for driving-school instructors and directors. It lets users create an account, take timed mini-exams, track their performance across hundreds of official questions, and study by theme or difficulty. The platform’s goal is to help candidates practice efficiently, and identify weak areas through detailed analytics.",
         image:
-            "https://raw.githubusercontent.com/iDarkQ/rotundaspreita-web/refs/heads/main/docs/website-preview.png?token=GHSAT0AAAAAADLHBUFQUUOZY4TN5YZIZBO42JPKLJQ",
+            "https://raw.githubusercontent.com/iDarkQ/rotundaspreita-web/main/docs/website-preview.png",
         link: "https://github.com/iDarkQ/rotundaspreita-web",
         tags: [
             "NextJS",
