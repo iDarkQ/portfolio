@@ -4,6 +4,7 @@ export const ResumeCardCoreTechnologies = () => (
   <ResumeCardOutlines
     name="Core Technologies:"
     items={[
+      "Docker",
       "Turborepo",
       "HTML",
       "CSS",
