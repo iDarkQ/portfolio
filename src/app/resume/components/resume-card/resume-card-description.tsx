@@ -3,7 +3,7 @@ import { ResumeProjects } from "@/app/resume/components/resume-card/resume-proje
 
 export const ResumeCardDescription = () => (
   <section className="flex flex-col gap-5">
-    <Text as="h3">Projects</Text>
+    <Text as="h3">Experience</Text>
     <Text as="p" className="md-paragraph">
       I’ve worked on a handful of web projects, utilizing various technologies,
       here is the list of my proudest work:

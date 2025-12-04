@@ -11,7 +11,6 @@ export const ResumeCardOthers = () => (
       "Performance Optimization",
       "Progressive Enhancement",
       "Build Automation",
-      "Next.js",
     ]}
   />
 );
