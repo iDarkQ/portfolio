@@ -44,6 +44,7 @@ export const projects: ProjectData[] = [
             "Prisma",
             "Postgres",
             "Turborepo",
+            "Stripe",
             "Group Project",
         ],
     },
