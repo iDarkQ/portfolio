@@ -17,6 +17,7 @@ export const projects: ProjectData[] = [
             "https://raw.githubusercontent.com/iDarkQ/rotundaspreita-web/main/docs/website-preview.png",
         link: "https://github.com/iDarkQ/rotundaspreita-web",
         tags: [
+            "Docker",
             "NextJS",
             "React",
             "Tailwind CSS",
