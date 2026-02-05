@@ -7,7 +7,7 @@ export const ResumeCardHeader = () => (
       as="h2"
       className={darkResume ? "text-neutral-90" : "text-light-on-background"}
     >
-      Junior Full-stack Developer
+      Full-stack Developer
     </Text>
     <Text className="md-paragraph pt-5">
       Engineer striving for expanding knowledge and driven by a long-living
