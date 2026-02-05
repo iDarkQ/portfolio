@@ -37,6 +37,7 @@ export const projects: ProjectData[] = [
             "https://raw.githubusercontent.com/BetterBedrock/better_bedrock_web/main/docs/home.png",
         link: "https://github.com/BetterBedrock/better_bedrock_web",
         tags: [
+            "NextJS",
             "React",
             "NestJS",
             "SCSS",
