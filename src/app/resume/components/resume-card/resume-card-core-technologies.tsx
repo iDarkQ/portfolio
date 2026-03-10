@@ -4,20 +4,22 @@ export const ResumeCardCoreTechnologies = () => (
   <ResumeCardOutlines
     name="Core Technologies:"
     items={[
-      "Docker",
-      "Turborepo",
       "HTML",
       "CSS",
       "JavaScript",
-      "React",
       "TypeScript",
-      "Fastify",
+      "React",
+      "Next.js",
+      "Tailwind",
       "Sass",
+      "Storybook",
+      "Sentry",
+      "Docker",
+      "Turborepo",
+      "Fastify",
       "NestJS",
       "ExpressJS",
-      "Tailwind",
       "NodeJS",
-      "Next.js",
       "PostgresSQL",
       "Prisma",
     ]}

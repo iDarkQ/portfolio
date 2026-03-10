@@ -5,12 +5,12 @@ export const ResumeCardOthers = () => (
     name="Others:"
     items={[
       "Responsive Web Design",
-      "Software Testing",
-      "SE Optimization",
-      "PWAs",
       "Performance Optimization",
+      "SEO Optimization",
+      "Software Testing",
       "Progressive Enhancement",
       "Build Automation",
+      "PWAs",
     ]}
   />
 );
