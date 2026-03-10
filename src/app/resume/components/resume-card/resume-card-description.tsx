@@ -1,13 +1,12 @@
 import { Text } from "@/app/components/text";
-import { ResumeProjects } from "@/app/resume/components/resume-card/resume-project";
+import { ResumeExperiences } from "@/app/resume/components/resume-card";
+import { ResumeProjects } from "@/app/resume/components/resume-card";
 
 export const ResumeCardDescription = () => (
   <section className="flex flex-col gap-5">
     <Text as="h3">Experience</Text>
-    <Text as="p" className="md-paragraph">
-      I’ve worked on a handful of web projects, utilizing various technologies,
-      here is the list of my proudest work:
-    </Text>
+    <ResumeExperiences />
+    <Text as="h3">Projects</Text>
     <ResumeProjects />
   </section>
 );
